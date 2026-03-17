@@ -1,0 +1,53 @@
+/* theme inspired by  https://cdn.dribbble.com/userupload/43176642/file/original-ea8b24cb9f59c59a4fadc2f79b9bf6ce.jpg?resize=752x&vertical=center  */
+
+/* General Styling*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fef7ec;
+    color: #000;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #feedd2;
+    padding: 10px 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    overflow-x: auto;
+}
+
+nav ul li {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+nav ul li a {
+    font-weight: bold;
+}
+
+footer {
+    background: #feedd2;
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+/* Styles for the Golden Fork Restaurant Homepage */
+
+/* Styles for the Golden Fork Restaurant Menu */
+
+/* Styles for the Golden Fork Restaurant Contact Page */
