@@ -1,8 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Fork Restaurant | Reservations</title>
+</head>
+<body>
+    <link rel="stylesheet" href="css/style.css">
     <title>Golden Fork Restaurant | Reservations</title>
 </head>
 <body>
@@ -27,6 +32,59 @@
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+    </nav>
+</html><section id="reservations">
+  <h1>Golden Fork Reservations</h1>
+  <p>Reserve your table today at Golden Fork and enjoy an unforgettable dining experience.</p>
+
+  <div class="reservation-info">
+    <h2>Contact</h2>
+    <ul>
+      <li>Phone: <strong>+1 (555) 123-4567</strong></li>
+      <li>Email: <strong>reservations@goldenfork.com</strong></li>
+      <li>Address: 123 Golden Fork Ave, Foodie District, City, State ZIP</li>
+      <li>Hours:
+        <ul>
+          <li>Mon–Thu 12pm–10pm</li>
+          <li>Fri–Sat 12pm–11pm</li>
+          <li>Sun 10am–9pm</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>How to Book</h2>
+    <ul>
+      <li>Online form below</li>
+      <li>Call us between 10am and 8pm</li>
+      <li>Walk-ins welcome (as available)</li>
+      <li>Large party notices 48h ahead</li>
+    </ul>
+
+    <h2>Reservation Policy</h2>
+    <ul>
+      <li>24-hour cancellation requested</li>
+      <li>15-minute late arrival grace</li>
+      <li>No-show fee may apply for large groups</li>
+    </ul>
+
+    <h2>Special Requests</h2>
+    <p>Let us know if you need dietary support, celebration arrangements, or accessible seating.</p>
+  </div>
+
+  <div class="reservation-form">
+    <h2>Book Now</h2>
+    <form action="/submit-reservation" method="post">
+      <label>Name<input type="text" name="name" required></label>
+      <label>Email<input type="email" name="email" required></label>
+      <label>Phone<input type="tel" name="phone" required></label>
+      <label>Date<input type="date" name="date" required></label>
+      <label>Time<input type="time" name="time" required></label>
+        <label>Guests<input type="number" name="guests" min="1" required></label>
+      <button type="submit">Reserve Table</button>
+    </form>
+  </div>
+</section>
+</body>
         <hr>
     </nav>
 
@@ -62,4 +120,5 @@
         <p>&copy; 2026 Golden Fork Restaurant</p>
     </footer>
 </body>
+</html>
 </html>
