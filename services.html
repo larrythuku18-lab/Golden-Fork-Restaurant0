@@ -1,78 +1,63 @@
-
-</section><section class="services-section">
-    <h2 class="section-title">Our Services</h2>
-    <div class="services-grid">
-        
-        <div class="service-card">
-            <div class="icon-box">⭐</div>
-            <h3>Custom Consulting</h3>
-            <p>Tailored strategies to help your project reach its full potential.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Golden Fork Restaurant | Services</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                Golden Fork
+                <span>Restaurant</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="chefs.html">Chefs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="service-card">
-            <div class="icon-box">🚀</div>
-            <h3>Fast Delivery</h3>
-            <p>Efficient workflows that ensure your results are ready on time.</p>
-        </div>
+    <main>
+        <section>
+            <h2>Our Services</h2>
+            <p>At Golden Fork Restaurant, we offer a range of services:</p>
+            <ul>
+                <li><strong>Dine-In:</strong> Comfortable seating for families and friends</li>
+                <li><strong>Table Reservations:</strong> Book your table in advance</li>
+                <li><strong>Special Events:</strong> Birthdays, anniversaries, corporate events</li>
+                <li><strong>Group Dining:</strong> Large groups welcome</li>
+                <li><strong>Catering:</strong> We bring our food to your events</li>
+            </ul>
+        </section>
+    </main>
 
-        <div class="service-card">
-            <div class="icon-box">🛠️</div>
-            <h3>Ongoing Support</h3>
-            <p>Reliable maintenance and updates to keep everything running smoothly.</p>
-        </div>
+    <footer>
+        <p>&copy; 2026 Golden Fork Restaurant. All rights reserved.</p>
+    </footer>
 
-    </div>
-</section>
-<style>
-/* 1. Global Page Styles */
-body {
-  background-image: url('bg.jpg'); 
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
-  text-shadow: 2px 2px 4px rgba(7, 100, 222, 0.7);
-}
-
-/* 3. The Services Layout */
-.services-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 50px;
-}
-
-/* 4. The Individual Service Boxes */
-.service-box {
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  padding: 20px;
-  margin: 10px;
-  border-radius: 15px;
-  text-align: center;
-  width: 250px;
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
-}
-
-.service-image {
-  font-size: 50px; /* Makes the emojis nice and big */
-  margin-bottom: 15px;
-}
-
-/* 5. The "Book a Table" Button */
-.service-btn {
-  display: inline-block;
-  background-color: #ff4757; /* A nice "appetite" red */
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 15px;
-  transition: 0.3s;
-}
-
-.service-btn:hover {
-  background-color: #e84118;
-  transform: scale(1.05);
-}
-</style>
-
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

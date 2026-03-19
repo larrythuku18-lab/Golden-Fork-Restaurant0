@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,47 +7,67 @@
     <title>Golden Fork Restaurant | FAQ</title>
 </head>
 <body>
-    <header>
-        <h1>Frequently Asked Questions</h1>
-        <p>Helpful answers for our guests.</p>
-    </header>
-
+    <!-- Navigation -->
     <nav>
-        <h2>Golden Fork Restaurant</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="chefs.html">Chefs</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="offers.html">Offers</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <hr>
+        <div class="nav-container">
+            <div class="logo">
+                Golden Fork
+                <span>Restaurant</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="chefs.html">Chefs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>
         <section>
-            <h2>Common Questions</h2>
-            <h3>Do you take reservations?</h3>
-            <p>Yes, guests can reserve tables in advance through our reservations page.</p>
-
-            <h3>Do you offer takeaway?</h3>
-            <p>Yes, many of our meals are available for takeaway.</p>
-
-            <h3>Do you host events?</h3>
-            <p>Yes, we host birthdays, small celebrations, and family dining events.</p>
+            <h2>Frequently Asked Questions</h2>
+            
+            <h3>Do I need to make a reservation?</h3>
+            <p>While walk-ins are welcome, we recommend making a reservation especially on weekends.</p>
+            
+            <h3>What are your opening hours?</h3>
+            <p>Monday-Friday: 8AM-10PM, Saturday: 9AM-11PM, Sunday: 9AM-9PM</p>
+            
+            <h3>Do you cater for dietary restrictions?</h3>
+            <p>Yes, we offer vegetarian options. Please inform our staff when ordering.</p>
+            
+            <h3>Is there parking available?</h3>
+            <p>Yes, we have parking available for our guests.</p>
+            
+            <h3>Can I host a private event?</h3>
+            <p>Absolutely! We accommodate birthday parties, corporate events, and more.</p>
+            
+            <h3>What payment methods do you accept?</h3>
+            <p>We accept cash, M-Pesa, and major credit cards.</p>
         </section>
     </main>
 
     <footer>
-        <hr>
-        <p>&copy; 2026 Golden Fork Restaurant</p>
+        <p>&copy; 2026 Golden Fork Restaurant. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

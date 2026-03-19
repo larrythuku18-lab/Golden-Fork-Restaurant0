@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,45 +7,67 @@
     <title>Golden Fork Restaurant | Offers</title>
 </head>
 <body>
-    <header>
-        <h1>Special Offers</h1>
-        <p>Enjoy our current promotions and meal deals.</p>
-    </header>
-
+    <!-- Navigation -->
     <nav>
-        <h2>Golden Fork Restaurant</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="chefs.html">Chefs</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="offers.html">Offers</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <hr>
+        <div class="nav-container">
+            <div class="logo">
+                Golden Fork
+                <span>Restaurant</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="chefs.html">Chefs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="offers.html" class="active">Offers</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>
         <section>
-            <h2>Lunch Combo</h2>
-            <p>Get a main meal and drink at a discounted price every weekday afternoon.</p>
-        </section>
-
-        <section>
-            <h2>Weekend Dessert Offer</h2>
-            <p>Order any main meal on weekends and enjoy a dessert at a reduced price.</p>
+            <h2>Special Offers</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <h3>Weekend Family Deal</h3>
+                    <p>15% off for families of 4+ on weekends.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Early Bird Dinner</h3>
+                    <p>10% off for bookings between 5-6 PM.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Student Discount</h3>
+                    <p>10% off with valid student ID.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Birthday Special</h3>
+                    <p>Free dessert on your birthday!</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <hr>
-        <p>&copy; 2026 Golden Fork Restaurant</p>
+        <p>&copy; 2026 Golden Fork Restaurant. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
