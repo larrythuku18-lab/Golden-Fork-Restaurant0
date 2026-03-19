@@ -3,110 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Fork Restaurant | Events</title>
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
-    <header>
-        <h1>Golden Fork Events</h1>
-        <p>Craft memorable gatherings with outstanding food and service. The perfect place for celebrations that look great and work for your budget.</p>
-    </header>
-
-    <main>
-        <section>
-            <h2>Premium Private Dinner Packages</h2>
-            <p>Designed for clients who want an intimate premium experience with minimal planning. Includes private dining room, custom set menu, dedicated service staff, and exclusive wine pairing options.</p>
-            <ul>
-                <li><strong>Group size:</strong> 10–30 guests</li>
-                <li><strong>Menu:</strong> 3-course or 4-course gourmet selection</li>
-                <li><strong>Perks:</strong> complimentary welcome champagne + branded table decor</li>
-            </ul>
-            <p><img src="public/menu/privatedinner.jpg" alt="Elegant private dinner table" style="max-width:100%;height:auto;"></p>
-        </section>
-
-        <section>
-            <h2>Weekend Brunch Experiences</h2>
-            <p>High-demand, high-margin weekend brunches that bring repeat foot traffic. Offerings include family-style shares, bottomless beverage upgrades, and live acoustic sets (Saturdays/Sundays).</p>
-            <ul>
-                <li><strong>Turnkey pricing:</strong> fixed brunch set + beverage add-ons</li>
-                <li><strong>Family-friendly:</strong> children’s menu and play corner options</li>
-                <li><strong>Marketing pack:</strong> social media post templates and table tents</li>
-            </ul>
-            <p><img src="public/menu/brunch.jpg" alt="Sunny brunch table" style="max-width:100%;height:auto;"></p>
-        </section>
-
-        <section>
-            <h2>Corporate Networking Nights</h2>
-            <p>Weekly or monthly networking events tailored for professionals. Ideal for sponsors, product demos, and group referrals with a built-in restaurant experience.</p>
-            <ul>
-                <li><strong>Format:</strong> buffet station + drinks package + networking lounge</li>
-                <li><strong>Value:</strong> custom branding, logo projection, and giveaway options</li>
-                <li><strong>Profit acceleration:</strong> promo add-ons for meeting room rentals and voicemail follow-up</li>
-            </ul>
-            <p><img src="public/menu/networking.jpg" alt="Networking event in restaurant" style="max-width:100%;height:auto;"></p>
-        </section>
-
-        <section>
-            <h2>Seasonal Theme Celebrations</h2>
-            <p>Holiday-boosted events with high-spend menu upgrades, limited seats, and immersive decor. Examples: New Year’s Gala, Summer Sunset Tasting, Harvest Table Feast.</p>
-            <ul>
-                <li><strong>Custom events:</strong> corporate holiday parties, birthday experiences, wedding rehearsal dinners</li>
-                <li><strong>Extras:</strong> on-site photo moments, themed cocktails, live entertainment</li>
-                <li><strong>Pre-booking boost:</strong> early bird discounts and party hold deposits</li>
-            </ul>
-            <p><img src="public/menu/seasonal.jpg" alt="Seasonal decorated event" style="max-width:100%;height:auto;"></p>
-        </section>
-
-        <section>
-            <h2>How to Book</h2>
-            <p>Contact our events team for a custom proposal and revenue model that fits your client goals.</p>
-            <p><strong>Email:</strong> events@codeandcravings.com</p>
-            <p><strong>Phone:</strong> (123) 456-7890</p>
-            <p><a href="contact.html">Request an event quote</a> today and secure your preferred date.</p>
     <link rel="stylesheet" href="css/style.css">
     <title>Golden Fork Restaurant | Events</title>
 </head>
 <body>
-    <header>
-        <h1>Upcoming Events</h1>
-        <p>Join us for exciting dining experiences and special occasions.</p>
-    </header>
-
+    <!-- Navigation -->
     <nav>
-        <h2>Golden Fork Restaurant</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="chefs.html">Chefs</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="offers.html">Offers</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <hr>
+        <div class="nav-container">
+            <div class="logo">
+                Golden Fork
+                <span>Restaurant</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="chefs.html">Chefs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>
         <section>
-            <h2>Weekend Family Lunch</h2>
-            <p>Every Saturday and Sunday, enjoy a special family meal package in a warm atmosphere.</p>
-        </section>
-
-        <section>
-            <h2>Birthday Packages</h2>
-            <p>Celebrate birthdays with reserved seating, custom menu options, and dessert packages.</p>
+            <h2>Host Your Events</h2>
+            <p>Make your special occasions memorable at Golden Fork Restaurant.</p>
+            <ul>
+                <li><strong>Birthday Parties:</strong> Celebrate with delicious food</li>
+                <li><strong>Anniversaries:</strong> Romantic dinner setting</li>
+                <li><strong>Corporate Events:</strong> Business lunches and team dinners</li>
+                <li><strong>Family Gatherings:</strong> Perfect for large celebrations</li>
+                <li><strong>Private Dining:</strong> Exclusive dining experience</li>
+            </ul>
+            <a href="contact.html" class="cta-button">Contact Us</a>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Golden Fork Restaurant. All rights reserved.</p>
-        <hr>
-        <p>&copy; 2026 Golden Fork Restaurant</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,50 +7,88 @@
     <title>Golden Fork Restaurant | Gallery</title>
 </head>
 <body>
-    <header>
-        <h1>Gallery</h1>
-        <p>A look inside our restaurant experience.</p>
-    </header>
-
+    <!-- Navigation -->
     <nav>
-        <h2>Golden Fork Restaurant</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="chefs.html">Chefs</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="offers.html">Offers</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <hr>
+        <div class="nav-container">
+            <div class="logo">
+                Golden Fork
+                <span>Restaurant</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="chefs.html">Chefs</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>
         <section>
-            <h2>Dining Area</h2>
-            <p>Comfortable seating and a relaxing atmosphere for every guest.</p>
-        </section>
-
-        <section>
-            <h2>Our Meals</h2>
-            <p>Beautifully prepared meals served fresh every day.</p>
-        </section>
-
-        <section>
-            <h2>Special Occasions</h2>
-            <p>We welcome guests for birthdays, family dinners, and small celebrations.</p>
+            <h2>Our Food Gallery</h2>
+            <p>Explore some of our most popular dishes.</p>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <img src="public/menu/grilledchicken.jpg" alt="Grilled Chicken">
+                    <div class="menu-card-content">
+                        <h3>Grilled Chicken</h3>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="public/menu/beefburger.jpg" alt="Beef Burger">
+                    <div class="menu-card-content">
+                        <h3>Beef Burger</h3>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="public/menu/cheesepizza.jpg" alt="Cheese Pizza">
+                    <div class="menu-card-content">
+                        <h3>Cheese Pizza</h3>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="public/menu/spaghetti.jpg" alt="Spaghetti">
+                    <div class="menu-card-content">
+                        <h3>Spaghetti Bolognese</h3>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="public/menu/fishfillet.jpg" alt="Fish Fillet">
+                    <div class="menu-card-content">
+                        <h3>Fish Fillet</h3>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="public/menu/chocolatecake.jpg" alt="Chocolate Cake">
+                    <div class="menu-card-content">
+                        <h3>Chocolate Cake</h3>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <hr>
-        <p>&copy; 2026 Golden Fork Restaurant</p>
+        <p>&copy; 2026 Golden Fork Restaurant. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
