@@ -1,7 +1,7 @@
 
 # Golden Fork Restaurant Project
 
-https://danielandeche001.github.io/goldenforkrestaurant
+https://larrythuku18-lab.github.io/Golden-Fork-Restaurant0
 
 ## Project Overview
 Golden Fork Restaurant is a multi-page HTML-only website project designed for a restaurant business. It includes important restaurant pages such as home, menu, about, services, reservations, chefs, events, offers, testimonials, FAQ, gallery, and contact.
